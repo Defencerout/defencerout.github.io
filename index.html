@@ -21,116 +21,161 @@
     <body>
         
         <nav class="navbar py-2 bg-white">
+           
             <div class="container">
-               <section>
-                
-                <div class="d-flex">
-                    <a class="navbar-brand" href="#"> NORD Energy </a>
-                    <ol class="navbar-nav">
-                        <li class="nav-item"><a href="index.html" class="nav-link"> About us</a> </li>
-                        <li class="nav-item"><a href="products.html" class="nav-link"> Products </a></li>
-                        <li class="nav-item"><a href="careers.html"class="nav-link"> Careers</a> </li>
-                        <li class="nav-item"><a href="contact.html"class="nav-link"> Contacts</a> </li>
-                    </ol>
-
-                    <ul class="navbar-nav mb-2 flex-row">
-                        <li class="nav-item"><a href="#" class="nav-link"> <i class="fas fa-dolly-flatbed"></i></a> </li>
-                        <li class="nav-item"><a href="#" class="nav-link"> <i class="far fa-heart"></i> </a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"> <i class="fas fa-user"></i></a> </li>
-                    </ul>
+                <div class="">
+                    <input type="checkbox" class="trigger" id="hamburger">
+                    <label for="hamburger"><i class="fas fa-bars nav-toggle"></i></label>
                 </div>
-                </section>
+                                                          
+                        <!--<div class=""><a class="navbar-brand" href="index.html"> NORD Energy </a></div>-->
+                <div class="d-flex">
+                    <div class="logo-nav"><a href="index.html"><img src="images/NORD_index.png" class="logo-nav" alt="Nord Energy"></a></div>
+                        <ol class="navbar-nav brackets">
+                            <li class="nav-item nav-link-menu"><a href="index.html" class="nav-link nav-text-muted"> Home</a> </li>
+                            <li class="nav-item nav-link-menu"><a href="products.html" class="nav-link nav-text-muted"> Products </a></li>
+                            <li class="nav-item nav-link-menu"><a href="careers.html"class="nav-link nav-text-muted"> Careers</a> </li>
+                            <li class="nav-item nav-link-menu"><a href="contact.html"class="nav-link nav-text-muted"> Contacts</a> </li>
+                        </ol>
+    
+                        <ul class="navbar-nav mb-2">
+                        
+                            <li class="nav-item"><a href="cart.html" class="nav-link"> <i class="fas fa-trailer"></i></a> </li>
+                            <li class="nav-item"><a href="login.html" class="nav-link"> <i class="fas fa-car-side"></i></a> </li>
+                            <li class="nav-item"><a href="#" class="nav-link"> <i class="fas fa-cogs"></i> </a></li>
+                        
+                        </ul>
+                
+                </div>
+                
             </div>
             <!-- navbar -->
         </nav>
-       <section>
+       <section class="text-center">
          <!-- hearo -->
-         <h3 class="text-center">In Energy We Trust</h3>
-         
+         <h3 class="">In Energy We Trust</h3>
+         <p class="">NORD Energy provides a wide range of petroleum products in both Bulk and Retail. You can purchase products starting only from 10 litres.</p>
        </section>
        <!-- categories -->
 
-        <section style="background: url(images/pexels-pixabay-257700.jpg)" class="py-5 bg-center bg-cover">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>E=MC<sup>2</sup></h2>
-                        <p><b>We provide a wide range of petroleum products in Bulk and Retailed ones. You can purchase products starting only from 10 litres.</b></p>
-                        <div><a href="contact.html">Bulk</a></div>
-                        <a href="#">Retail cards</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+       
        
        
        <section class="py-5">
             <div class="container py-5"><!-- showcase -->
-                    <header class="mb-3"><!-- Showcase header -->
-                        <h3 class=" text-center h3">HOT offering</h3>
-                        
+                    <header class="mb-3 text-center"><!-- Showcase header -->
+                        <h3 class="h3">HOT offering</h3>
+                        <div class="row3">
+                        <div class=""> <a href="contact.html" class="nav-link">Bulk</a></div>
+                        <div class=""> <a href="cardlist.html" class="nav-link">Retail cards</a></div>
+                        </div>
                     </header> <!-- /Showcase header -->
               
-                <div class="container pt-5 row" style="margin-left: 10px;"> <!-- products container -->
+                <div class="container pt-5 row products-container" style="margin-left: 10px;"> <!-- products container -->
                 
                     <div class="product-wrapper col-3"> 
                         <div class="product mb-4"><!-- product1 -->
+                            <span class="badge bg-warning"> <b>Diesel</b> </span>
+                            <a href="products.html">
+                            <img src="images/Diesel-1.jpg" class="img-fluid" alt="Diesel">
+                            </a>
+                            <div class="btn-block shadow d-inline-block"><!-- btn block -->
+                                <a href="#" class="product-btn"><i class="fas fa-heart"></i></a>  <!-- btn like -->
+                                <a href="#" class="product-btn"><i class="fas fa-trailer"></i></a>  <!-- btn detail -->
+                                <a href="#" class="product-btn"><i class="fas fa-expand"></i></a>  <!-- btn add to cart -->
+                                </div><!-- /btn block -->                                  
+                            <h6 class="text-center"><a href="#" class="reset-anchor">Diesel Fuel Card (20l)</a></h6>
+                                <div class="font-weight-bold text-muted text-center">$19.99</div>
+                            </div><!-- /btn block -->                                                         
+                    </div><!-- /product1 -->
+                    <div class="product-wrapper col-3"> 
+                        <div class="product mb-4"><!-- product1 -->
                             <div class="text-center"><span class="badge bg-warning"> <b>Diesel</b> </span> </div>
-                            <img src="images/Audi rs3.jpg" class="img-fluid" alt="audi rs3">
-                            <div class="font-weight-bold">$99.99</div>
-                            <p class="">only for 10 days from now</p>
-                            <div class="btn-block"><!-- btn block -->
-                            <a href="#" class="product-btn">like</a>  <!-- btn like -->
-                            <a href="#" class="product-btn">detail</a>  <!-- btn detail -->
-                            <a href="#" class="product-btn">add to cart</a>  <!-- btn add to cart -->
+                            <a href="products.html">
+                            <img src="images/Diesel-1.jpg" class="img-fluid" alt="Diesel">
+                            </a>
+                            <div class="btn-block shadow d-inline-block"><!-- btn block -->
+                                <a href="#" class="product-btn"><i class="fas fa-heart"></i></a>  <!-- btn like -->
+                                <a href="#" class="product-btn"><i class="fas fa-trailer"></i></a>  <!-- btn detail -->
+                                <a href="#" class="product-btn"><i class="fas fa-expand"></i></a>  <!-- btn add to cart -->
+                                </div><!-- /btn block -->                                  
+                            <h6 class="text-center"><a href="#" class="reset-anchor">Diesel Fuel Card (20l)</a></h6>
+                                <div class="font-weight-bold text-muted text-center">$19.99</div>
                             </div><!-- /btn block -->                                                         
-                        </div ><!-- /product1 -->
-                    </div>
-                    <div class="product-wrapper col-3">   
-                        <div class="product mb-4"><!-- product2 -->
-                            <div class="text-center"><span class="badge bg-warning"> <b>Petrol</b> </span> </div>
-                            <img src="images/Audi rs3.jpg" class="img-fluid" alt="audi rs3">
-                            <div class="font-weight-bold">$99.99</div>
-                            <p class="">only for 10 days from now</p>
-                            <div class="btn-block"><!-- btn block -->
-                            <a href="#" class="product-btn">like</a>  <!-- btn like -->
-                            <a href="#" class="product-btn">detail</a>  <!-- btn detail -->
-                            <a href="#" class="product-btn">add to cart</a>  <!-- btn add to cart -->
+                    </div><!-- /product1 -->
+                    <div class="product-wrapper col-3"> 
+                        <div class="product mb-4"><!-- product1 -->
+                            <div class="text-center"><span class="badge bg-warning"> <b>Diesel</b> </span> </div>
+                            <a href="products.html">
+                            <img src="images/Diesel-1.jpg" class="img-fluid" alt="Diesel">
+                            </a>
+                            <div class="btn-block shadow d-inline-block"><!-- btn block -->
+                                <a href="#" class="product-btn"><i class="fas fa-heart"></i></a>  <!-- btn like -->
+                                <a href="#" class="product-btn"><i class="fas fa-trailer"></i></a>  <!-- btn detail -->
+                                <a href="#" class="product-btn"><i class="fas fa-expand"></i></a>  <!-- btn add to cart -->
+                                </div><!-- /btn block -->                                  
+                            <h6 class="text-center"><a href="#" class="reset-anchor">Diesel Fuel Card (20l)</a></h6>
+                                <div class="font-weight-bold text-muted text-center">$19.99</div>
                             </div><!-- /btn block -->                                                         
-                        </div ><!-- /product2 -->
-                    </div>
-                    <div class="product-wrapper col-3">
-                        <article class="product mb-4"><!-- product3 -->
-                            <div class="text-center"><span class="badge bg-warning"> <b>LPG</b> </span> </div>
-                            <img src="images/Audi rs3.jpg" class="img-fluid" alt="audi rs3">
-                            <div class="font-weight-bold">$99.99</div>
-                            <p class="">only for 10 days from now</p>
-                            <div class="btn-block"><!-- btn block -->
-                            <a href="#" class="product-btn">like</a>  <!-- btn like -->
-                            <a href="#" class="product-btn">detail</a>  <!-- btn detail -->
-                            <a href="#" class="product-btn">add to cart</a>  <!-- btn add to cart -->
-                            </div><!-- /btn block -->                                                
-                        </article ><!-- /product3 -->
-                    </div>
-                    <div class="product-wrapper col-3">    
-                        <article class="product mb-4"><!-- product4 -->
-                            <div class="text-center"><span class="badge bg-warning"> <b>Jet Fuel</b> </span> </div>
-                            <img src="images/Audi rs3.jpg" class="img-fluid" alt="audi rs3">
-                            <div class="font-weight-bold">$99.99</div>
-                            <p class="">only for 10 days from now</p>
-                            <div class="btn-block"><!-- btn block -->
-                            <a href="#" class="product-btn">like</a>  <!-- btn like -->
-                            <a href="#" class="product-btn">detail</a>  <!-- btn detail -->
-                            <a href="#" class="product-btn">add to cart</a>  <!-- btn add to cart -->
-                            </div><!-- /btn block -->                                            
-                        </article ><!-- /product4 -->
-                    </div>                  
-                    
+                    </div><!-- /product1 -->
+                    <div class="product-wrapper col-3"> 
+                        <div class="product mb-4"><!-- product1 -->
+                            <div class="text-center"><span class="badge bg-warning"> <b>Diesel</b> </span> </div>
+                            <a href="products.html">
+                            <img src="images/Diesel-1.jpg" class="img-fluid" alt="Diesel">
+                            </a>
+                            <div class="btn-block shadow d-inline-block"><!-- btn block -->
+                                <a href="#" class="product-btn"><i class="fas fa-heart"></i></a>  <!-- btn like -->
+                                <a href="#" class="product-btn"><i class="fas fa-trailer"></i></a>  <!-- btn detail -->
+                                <a href="#" class="product-btn"><i class="fas fa-expand"></i></a>  <!-- btn add to cart -->
+                                </div><!-- /btn block -->                                  
+                            <h6 class="text-center"><a href="#" class="reset-anchor">Diesel Fuel Card (20l)</a></h6>
+                                <div class="font-weight-bold text-muted text-center">$19.99</div>
+                            </div><!-- /btn block -->                                                         
+                    </div><!-- /product1 -->
+                    <div class="product-wrapper col-3"> 
+                        <div class="product mb-4"><!-- product1 -->
+                            <div class="text-center"><span class="badge bg-warning"> <b>Diesel</b> </span> </div>
+                            <a href="products.html">
+                            <img src="images/Diesel-1.jpg" class="img-fluid" alt="Diesel">
+                            </a>
+                            <div class="btn-block shadow d-inline-block"><!-- btn block -->
+                                <a href="#" class="product-btn"><i class="fas fa-heart"></i></a>  <!-- btn like -->
+                                <a href="#" class="product-btn"><i class="fas fa-dolly-flatbed"></i></a>  <!-- btn detail -->
+                                <a href="#" class="product-btn"><i class="fas fa-expand"></i></a>  <!-- btn add to cart -->
+                                </div><!-- /btn block -->                                  
+                            <h6 class="text-center"><a href="#" class="reset-anchor">Diesel Fuel Card (20l)</a></h6>
+                                <div class="font-weight-bold text-muted text-center">$19.99</div>
+                            </div><!-- /btn block -->                                                         
+                    </div><!-- /product1 -->
+                        
+                </div>                 
+                                   
+                
+                
                 </div> <!-- /products container -->
+                <a href="cardlist.html" class="btn-browse"><p class="">Browse all</p></a
             </div><!-- /showcase -->
        </section>
-      
+
+       <section style="background: url(images/old_car.jpg)" class="py-5 bg-center bg-cover">
+       
+        <div class="container py-div">
+            <div class="row">
+                <div class="col-lg-6">
+                    
+                    <div class="text-muted">To move, to breathe, to fly, to float, </div>
+                    <div class="text-muted">To gain all while you give,  </div>
+                    <div class="text-muted">To roam the roads of lands remote, </div>
+                    <div class="text-muted">To travel is to live. </div>
+                    <h2 class="hero-heading">Hans Christian Andersen</h2>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </section>      
        <section><!-- hotsale info -->
         <div class="container pb-5">
             <div class="row">
@@ -176,7 +221,7 @@
 
        </section>
       
-       <footer>  <!-- footer -->
+       <footer class="bg-grey">  <!-- footer -->
         <div class="container py-5">
             <div class="row">
                 <div class= "col-md-4 col-sm-12 mb-3 mb-md-0">
@@ -200,20 +245,20 @@
 
                 <div class= "col-md-2 col-sm-12 mb-3 mb-md-0">
                     <h6>Checkout</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb2"><a href="#">About</a></li>
-                        <li class="mb-2">Blog</li>
-                        <li class="mb-2">Contact</li>
-                        <li class="mb-2">FAQ</li>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a href="#" class="reset-anchor">About us</a></li>
+                        <li class="mb-2"><a href="#" class="reset-anchor">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="reset-anchor">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="reset-anchor">FAQ</a></li>
                     </ul>
                 </div>
 
                 <div class= "col-md-4 col-sm-12 mb-3 mb-md-0">
-                   <p>Telephone number</p>
+                   <p class="text-muted">Telephone number</p>
                     <ul class="list-inline">
-                    <li class="list-inline-item"><a class="social icon" href="#"><i class="fab fa-facebook-square"></i></a></li>
-                    <li class="list-inline-item"><a class="social icon" href="#"><i class="fab fa-google"></i></a></li>
-                    <li class="list-inline-item"><a class="social icon" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-google"></i></a></li>
+                    <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
 
